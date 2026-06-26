@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/THE-ECHO-PROTOCOL/static/css/main.d416c841.css",
+    "main.js": "/THE-ECHO-PROTOCOL/static/js/main.356630ff.js",
+    "static/js/453.352ddca8.chunk.js": "/THE-ECHO-PROTOCOL/static/js/453.352ddca8.chunk.js",
+    "index.html": "/THE-ECHO-PROTOCOL/index.html",
+    "main.d416c841.css.map": "/THE-ECHO-PROTOCOL/static/css/main.d416c841.css.map",
+    "main.356630ff.js.map": "/THE-ECHO-PROTOCOL/static/js/main.356630ff.js.map",
+    "453.352ddca8.chunk.js.map": "/THE-ECHO-PROTOCOL/static/js/453.352ddca8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d416c841.css",
+    "static/js/main.356630ff.js"
+  ]
+}
