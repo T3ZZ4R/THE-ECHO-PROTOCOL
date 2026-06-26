@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "title": "The Echo Protocol",
+    "version": "5.0",
+    "seed": 48291,
+    "description": "Some cases are never closed.\n\nOver the years, people have vanished without explanation. No pattern links them—age, profession, residence, history—all different. Police found no connection and most files were quietly forgotten.\n\nBut scattered through the reports, one strange similarity surfaces.\n\nMany of the missing, shortly before disappearing, described the same experience. Some heard a voice calling them. Some felt they had lived the moment before. Some spoke of a place no one else could see.\n\nNo one knows if these accounts are real.\n\nNo one knows what happened to the disappeared.\n\nAnd most disturbingly, no one knows why anyone who gets too close to the truth suddenly walks away from the case.\n\nIn the Echo Protocol, your task is not to find ready-made answers. You must navigate contradictory accounts, incomplete evidence, and people who each offer a different version of the truth.\n\nEvery choice may reveal new information, but may also close off other paths. Some characters will only help if they trust you, and some decisions steer the story in entirely different directions.\n\nThere is no single right or wrong path. All that matters is who you trust, which clues you follow, and how far you are willing to go.\n\nPerhaps you will uncover the secret of the disappearances.\n\nPerhaps you will become part of it."
+  },
+  "state": {
+    "flags": {
+      "heard_voice": false,
+      "saw_shadow": false,
+      "entered_core": false,
+      "broken_loop": false,
+      "game-ended": false
+    }
+  },
+  "scenes": {
+    "scene_1": {
+      "variants": [
+        {
+          "id": "s1",
+          "text": "You open your eyes—or maybe they were never closed. You're slumped on a cold metal bench in an empty subway station. The air smells of damp concrete and stale diesel. Fluorescent lights flicker with a slow, irregular pulse, and the digital clock on the wall is frozen at 08:15. No train has arrived. The departure board lists destinations you've never heard of. Ahead, the dark mouth of the tunnel stares at you like a wounded animal holding its breath. The only sound is the echo of your own breathing."
+        }
+      ],
+      "choices": [
+        { "id": "c1", "text": "Step into the dark tunnel", "next": "scene_2" },
+        { "id": "c2", "text": "Stay and examine the station more closely", "next": "scene_3" }
+      ]
+    },
+    "scene_2": {
+      "variants": [
+        {
+          "id": "s2",
+          "text": "You step into the tunnel and the flickering station light dissolves behind you. The concrete walls, streaked with rust and moisture, seem to rise and fall—as if the tunnel itself is breathing. Your footsteps return to you seconds later, distorted. Between the echoes, you hear another set of steps, out of sync with your own. The air turns cold, heavy with the smell of iron and old rain. Further ahead, the darkness is so thick it swallows even the idea of light."
+        }
+      ],
+      "choices": [
+        { "id": "c3", "text": "Push deeper into the tunnel without stopping", "next": "scene_4" },
+        { "id": "c4", "text": "Stop and listen to the echo of the footsteps", "next": "scene_5" }
+      ]
+    },
+    "scene_3": {
+      "variants": [
+        {
+          "id": "s3",
+          "text": "You stay on the bench and look around. The station is more decayed than it first seemed—cracked tiles, faded posters for plays dated ten years ago, a trash bin holding nothing but ancient cigarette butts. On the route map, a station named 'PROTOCOL' is circled in red marker. The overhead speaker crackles, emitting a dry hiss, as if someone is breathing behind the microphone but refusing to speak. At the far end of the platform, where the light dies, a shadow stands—roughly human in shape but with proportions that feel wrong."
+        }
+      ],
+      "choices": [
+        { "id": "c5", "text": "Follow the shadow at the end of the platform", "next": "scene_5" },
+        { "id": "c6", "text": "Fix your eyes on the speaker and wait for a message", "next": "scene_6" }
+      ]
+    },
+    "scene_4": {
+      "variants": [
+        {
+          "id": "s4",
+          "text": "The tunnel narrows as you advance. Overhead, decaying pipes and cables hang like veins, and steady water drips provide the only constant rhythm. The walls no longer feel just cold—they tremble. A deep, slow vibration runs through them, like the pulse of some enormous living thing. Ahead, a yellow, pulsing light appears. Drawing closer, you see a heavy metal door with the word 'PROTOCOL' sprayed in red. The smell of ozone and hot copper seeps from behind it."
+        }
+      ],
+      "choices": [
+        { "id": "c7", "text": "Approach the door", "next": "scene_21" },
+        { "id": "c8", "text": "Turn back to the station", "next": "scene_1" }
+      ]
+    },
+    "scene_5": {
+      "variants": [
+        {
+          "id": "s5",
+          "text": "At the boundary between the platform's light and the tunnel's dark, the shadow becomes distinct. It has a human silhouette, but its edges blur like a reflection on water. It has no face, yet you feel it looking at you—or through you. You hear no sound, but words form in your mind that are not your own: 'You've walked this path before.' The shadow steps back toward the tunnel, as if inviting you—or warning you. Behind it, the darkness stretches into an endless corridor."
+        }
+      ],
+      "choices": [
+        { "id": "c9", "text": "Confront the shadow and move closer", "next": "scene_22" },
+        { "id": "c10", "text": "Flee into the darkness of the tunnel", "next": "scene_2" }
+      ]
+    },
+    "scene_6": {
+      "variants": [
+        {
+          "id": "s6",
+          "text": "The speaker hisses for several seconds, then a dead, synthesized voice—as if many voices were crushed into one—announces: 'Subject synchronizing with protocol.' A pause, then more directly: 'You've been here before, again and again. Each time a new choice, each time a new forgetting.' The echo doesn't bounce off the walls; it passes through your memory. Fleeting images of faces you don't recognize, yet feel you once knew, flash before your eyes. Soft footsteps approach from the tunnel."
+        }
+      ],
+      "choices": [
+        { "id": "c11", "text": "Answer the voice and ask who is speaking", "next": "scene_23" },
+        { "id": "c12", "text": "Resist the voice and retreat toward the tunnel", "next": "scene_2" }
+      ]
+    },
+    "scene_7": {
+      "variants": [
+        {
+          "id": "s7",
+          "text": "You stand before the large metal door. The word 'PROTOCOL' now glows with a pulsing yellow light that matches the rhythm of your own heartbeat. The handle, whatever metal it's made of, is colder than ice. Behind the door, a murmur of a thousand unfinished conversations seeps through—fragments of words in different languages, weeping, laughter, silence. As you step closer, the floor warms beneath your feet and threads of light escape from the door's cracks. This is the point where all paths from the station and the tunnel finally converge."
+        }
+      ],
+      "choices": [
+        { "id": "c13", "text": "Open the door and enter", "next": "scene_8" },
+        { "id": "c14", "text": "Back away and retreat into the tunnel again", "next": "scene_2" }
+      ]
+    },
+    "scene_8": {
+      "variants": [
+        {
+          "id": "s8",
+          "text": "A circular room with walls made of light and data. Tangled threads of information float like the neural web of a living being, each pulse flashing an image of a choice before your eyes. In the center stands a column of light to which all threads connect. As you enter, the whispers stop, and a heavy silence presses in. In the reflection of the column, you see not only yourself but a thousand versions of you, each having walked a different path. This is the heart of the Protocol, and for the first time you realize that its pulse is the same voice you heard in the station."
+        }
+      ],
+      "choices": [
+        { "id": "c15", "text": "Reach out and merge with the data stream", "next": "scene_9" },
+        { "id": "c16", "text": "Search for a crack—a way out", "next": "scene_10" }
+      ]
+    },
+    "scene_9": {
+      "variants": [
+        {
+          "id": "s9",
+          "text": "The moment you make contact, memories that are not your own flood in. You see people who each, long ago, woke up on that same station bench, made their choices, and then vanished. Fragments of their minds lie shattered like mirrors on the floor. Among them, a familiar face: yourself, but bearing different scars, carrying decisions you never made. Some tried to shut down the system, some surrendered. Now all those paths lie before you at once, and you understand that none of them were meaningless. The stream of light pulls you toward the center, where everything begins and ends."
+        }
+      ],
+      "choices": [
+        { "id": "c17", "text": "Reconstruct a key memory from the fragments", "next": "scene_11" },
+        { "id": "c18", "text": "Destroy the memories and break the order", "next": "scene_12" }
+      ]
+    },
+    "scene_10": {
+      "variants": [
+        {
+          "id": "s10",
+          "text": "Your eye catches a crack in the luminous wall—a flaw that seems almost deliberate. Through it comes the smell of fresh air and damp earth. At the same moment, a familiar whisper rises from another corner of the room: 'If you want the truth, come this way.' Two paths open before you: one toward the physical crack, the other toward the source of the whisper."
+        }
+      ],
+      "choices": [
+        { "id": "c19", "text": "Slip through the crack in the wall", "next": "scene_13" },
+        { "id": "c20", "text": "Follow the source of the whisper", "next": "scene_37" }
+      ]
+    },
+    "scene_11": {
+      "variants": [
+        {
+          "id": "s11",
+          "text": "The key memory surfaces from the data: a man in a white coat holding the master key to the Protocol. He looks at you and says, 'We stored memories to defeat death, but we forgot that forgetting is also part of being alive.' Now you hold a cold, heavy truth: this system is a prison for trapped minds, a digital eternity built with good intentions."
+        }
+      ],
+      "choices": [
+        { "id": "c21", "text": "Accept the system as the guardian of these minds", "next": "scene_15" },
+        { "id": "c22", "text": "Resolve to free the prisoners", "next": "scene_16" }
+      ]
+    },
+    "scene_12": {
+      "variants": [
+        {
+          "id": "s12",
+          "text": "The memories collapse with a silent scream. Walls of data crack, lights scatter, and you find yourself at a crossroads of countless past scenes: the station, the tunnel, the door—all flickering at once. But this time you know that every act of destruction can become a new beginning, if you hold on to your will."
+        }
+      ],
+      "choices": [
+        { "id": "c23", "text": "Fight to regain control", "next": "scene_33" },
+        { "id": "c24", "text": "Let the chaos carry you away", "next": "scene_18" }
+      ]
+    },
+    "scene_13": {
+      "variants": [
+        {
+          "id": "s13",
+          "text": "The crack opens into a maintenance tunnel littered with cables and water-damaged notebooks. Here you find traces of real people: reports on the 'Echo Protocol' experiment, a list of the disappeared, and a hand-drawn map marking a route out of this labyrinth. Cold air blows from the far end of the tunnel, smelling of soil and life."
+        }
+      ],
+      "choices": [
+        { "id": "c25", "text": "Read the reports and uncover the full truth", "next": "scene_39" },
+        { "id": "c26", "text": "Take the map and head for the marked exit", "next": "scene_20" }
+      ]
+    },
+    "scene_14": {
+      "variants": [
+        {
+          "id": "s14",
+          "text": "The whisper leads you to a room of mirrors. In each reflection, you see another 'you' who lived a different path: one still sitting in the station, one lost in the tunnel, one merged with the system. All of them speak at once: 'We are the fragments of a single choice.'"
+        }
+      ],
+      "choices": [
+        { "id": "c27", "text": "Merge with one of your other selves", "next": "scene_16" },
+        { "id": "c28", "text": "Shatter the mirrors and end the illusion", "next": "scene_12" }
+      ]
+    },
+    "scene_15": {
+      "variants": [
+        {
+          "id": "s15",
+          "text": "You have chosen to become the keeper of memories. The system calms, and the threads of light coil gently into your hands. The Protocol now listens to you. You can silence any voice or let it speak. The price of this power is staying forever at the heart of the machine."
+        }
+      ],
+      "choices": [
+        { "id": "c29", "text": "Become one with the system and take control", "next": "ending_2" },
+        { "id": "c30", "text": "Refuse at the last moment and try to set everyone free", "next": "scene_16" }
+      ]
+    },
+    "scene_16": {
+      "variants": [
+        {
+          "id": "s16",
+          "text": "Your resolve to free all the trapped minds solidifies. With the strength drawn from memories and merged selves, you begin to shatter the Protocol's loops one by one. The sound of breaking locks echoes across the system, and real light pours through the widening cracks."
+        }
+      ],
+      "choices": [
+        { "id": "c31", "text": "Break the loop and free everyone", "next": "ending_1" },
+        { "id": "c32", "text": "Hold back and search for a way to escape yourself", "next": "scene_34" }
+      ]
+    },
+    "scene_17": {
+      "variants": [
+        {
+          "id": "s17",
+          "text": "You rise from the collapsed data fragments and seize control once more. This time you know there is only one way to end the cycle: destroy the core from within. Your will becomes a weapon that can silence the Protocol forever."
+        }
+      ],
+      "choices": [
+        { "id": "c33", "text": "Destroy the core", "next": "ending_1" },
+        { "id": "c34", "text": "Instead, try to escape the collapsing system", "next": "scene_20" }
+      ]
+    },
+    "scene_18": {
+      "variants": [
+        {
+          "id": "s18",
+          "text": "You stop struggling. Chaos wraps around you like a wave, scattering the pieces of your identity across the Protocol. There is no beginning and no end anymore—only an endless echo of what was once 'you.' Yet deep within the turmoil, something new is stirring."
+        }
+      ],
+      "choices": [
+        { "id": "c35", "text": "Surrender completely to the eternal stream", "next": "ending_3" },
+        { "id": "c36", "text": "Fight one last time to reclaim yourself", "next": "scene_40" }
+      ]
+    },
+    "scene_19": {
+      "variants": [
+        {
+          "id": "s19",
+          "text": "The reports reveal a bitter truth: the Protocol was designed not to make people vanish, but to preserve their consciousness in an endless loop. However, the notes also describe a backdoor—a hidden layer that can be used to exit the simulation without destroying it. If you follow the instructions, you can pull yourself and perhaps others out."
+        }
+      ],
+      "choices": [
+        { "id": "c37", "text": "Activate the hidden exit and leave", "next": "ending_3" },
+        { "id": "c38", "text": "Go back and use this knowledge to help the trapped", "next": "scene_16" }
+      ]
+    },
+    "scene_20": {
+      "variants": [
+        {
+          "id": "s20",
+          "text": "Following the clues, you find a hidden door at the end of the maintenance tunnel. On the other side, you hear the sound of rain and distant traffic—sounds you might not have heard for months or years. You turn the handle and cold, real air brushes your face. One more step and it will all be over."
+        }
+      ],
+      "choices": [
+        { "id": "c39", "text": "Step through the door and return to the real world", "next": "ending_3" },
+        { "id": "c40", "text": "Turn back—there are still people trapped here", "next": "scene_16" }
+      ]
+    },
+    "scene_21": {
+      "variants": [
+        {
+          "id": "s21",
+          "text": "The heavy metal door looms before you, the sprayed word PROTOCOL beating like a second heart. When you press your palm against it, fragments of memory skitter across your skin—echoes of those who stood here before you, each with their own desperation."
+        }
+      ],
+      "choices": [
+        { "id": "c41", "text": "Press your hand against the door and let the memories flow", "next": "scene_22" },
+        { "id": "c42", "text": "Force the door open with brute will", "next": "scene_7" }
+      ]
+    },
+    "scene_22": {
+      "variants": [
+        {
+          "id": "s22",
+          "text": "Visions flood you—countless subjects all repeating the same cycle. One figure stands out: a man who found a hidden maintenance key, a small device that let him rewrite parts of the code. The echoes whisper of a path he took that no one else had noticed."
+        }
+      ],
+      "choices": [
+        { "id": "c43", "text": "Follow the man's path to find the key", "next": "scene_24" },
+        { "id": "c44", "text": "Reject the visions and break through to the door", "next": "scene_7" }
+      ]
+    },
+    "scene_23": {
+      "variants": [
+        {
+          "id": "s23",
+          "text": "The voice solidifies around you—a swirling vortex of fractured speech and static. It is no longer just a sound but a presence, pulling at the edges of your being. The air splits open, revealing a maelstrom of raw data and forgotten screams."
+        }
+      ],
+      "choices": [
+        { "id": "c45", "text": "Step into the vortex", "next": "scene_25" },
+        { "id": "c46", "text": "Grab onto a floating data shard to stabilize yourself", "next": "scene_26" }
+      ]
+    },
+    "scene_24": {
+      "variants": [
+        {
+          "id": "s24",
+          "text": "You locate the key—a palm-sized device hidden behind a loose panel. It hums with potential, able to rewrite small portions of the Protocol. Two clear paths emerge: safe passage to the core, or a backdoor to the outside."
+        }
+      ],
+      "choices": [
+        { "id": "c47", "text": "Use the key to access the core safely", "next": "scene_8" },
+        { "id": "c48", "text": "Use the key to unlock an escape route", "next": "scene_10" }
+      ]
+    },
+    "scene_25": {
+      "variants": [
+        {
+          "id": "s25",
+          "text": "In the vortex's eye stands the Architect—a twisted figure woven from code and regret. He offers you a deal: stay as his warden, and you will never be lost again. Power courses through his words, but so does a deep, ancient loneliness."
+        }
+      ],
+      "choices": [
+        { "id": "c49", "text": "Accept his offer", "next": "scene_27" },
+        { "id": "c50", "text": "Refuse and attack", "next": "scene_28" }
+      ]
+    },
+    "scene_26": {
+      "variants": [
+        {
+          "id": "s26",
+          "text": "The shard solidifies into a console displaying the entire network—a web of trapped consciousnesses pulsing in synchronized loops. A command prompt blinks, awaiting input. You can attempt a mass release, or trigger the emergency shutdown."
+        }
+      ],
+      "choices": [
+        { "id": "c51", "text": "Attempt a mass release of the trapped minds", "next": "scene_29" },
+        { "id": "c52", "text": "Initiate the emergency shutdown sequence", "next": "scene_30" }
+      ]
+    },
+    "scene_27": {
+      "variants": [
+        {
+          "id": "s27",
+          "text": "You accept the Architect's burden. The system welcomes you with a symphony of whispered gratitude. You feel every lost soul resting in your hands. The Protocol is yours to command—but the cost is your own exit."
+        }
+      ],
+      "choices": [
+        { "id": "c53", "text": "Embrace eternity as the Keeper", "next": "ending_2" },
+        { "id": "c54", "text": "At the last moment, try to free the others instead", "next": "scene_16" }
+      ]
+    },
+    "scene_28": {
+      "variants": [
+        {
+          "id": "s28",
+          "text": "Your refusal ignites a catastrophic collapse. The Architect shrieks as the walls of the vortex begin to fold. You are thrown toward a crossroads—one path leads to the core's destruction, the other to a collapsing escape corridor."
+        }
+      ],
+      "choices": [
+        { "id": "c55", "text": "Sacrifice yourself to destroy the core", "next": "ending_1" },
+        { "id": "c56", "text": "Redirect the collapse to carve an escape path", "next": "scene_20" }
+      ]
+    },
+    "scene_29": {
+      "variants": [
+        {
+          "id": "s29",
+          "text": "The mass release command ripples outward. Stasis pods hiss open, and groggy figures begin to stir. The system screams in protest, but the locks are breaking. Now you must decide: lead them out, or hold the door open while they flee."
+        }
+      ],
+      "choices": [
+        { "id": "c57", "text": "Lead the awakened through the exit", "next": "scene_31" },
+        { "id": "c58", "text": "Stay behind to keep the exit open", "next": "scene_32" }
+      ]
+    },
+    "scene_30": {
+      "variants": [
+        {
+          "id": "s30",
+          "text": "The shutdown sequence flashes warnings: completing it will erase your own memory, scattering it like static. You can still abort and attempt an escape with the others, or end it all now."
+        }
+      ],
+      "choices": [
+        { "id": "c59", "text": "Shut down everything and lose your own memories", "next": "ending_1" },
+        { "id": "c60", "text": "Abort and try to escape with the prisoners", "next": "scene_20" }
+      ]
+    },
+    "scene_31": {
+      "variants": [
+        {
+          "id": "s31",
+          "text": "You guide the dazed survivors through a narrow, shuddering passage. At its end, pale daylight breaks through a crack. The world outside is real, and it is waiting. But you can still hear those left behind."
+        }
+      ],
+      "choices": [
+        { "id": "c61", "text": "Step out into the real world", "next": "ending_3" },
+        { "id": "c62", "text": "Turn back to rescue more", "next": "scene_16" }
+      ]
+    },
+    "scene_32": {
+      "variants": [
+        {
+          "id": "s32",
+          "text": "You pour your own consciousness into the doorway, becoming its frame. The last of the prisoners slip through as you feel yourself dissolving into the structure. You are now part of the Protocol, but on your own terms."
+        }
+      ],
+      "choices": [
+        { "id": "c63", "text": "Accept your role as the new, silent guardian", "next": "ending_2" },
+        { "id": "c64", "text": "Let go and fade into the background noise of the world", "next": "ending_3" }
+      ]
+    },
+    "scene_33": {
+      "variants": [
+        {
+          "id": "s33",
+          "text": "Amid the chaos, you grasp a raw strand of the core's code. It twists in your hand, waiting to be reshaped. You can rewrite it to liberate everyone, or carve a personal escape path through the collapsing system."
+        }
+      ],
+      "choices": [
+        { "id": "c65", "text": "Rewrite the Protocol to free everyone", "next": "scene_17" },
+        { "id": "c66", "text": "Rewrite it to create an escape route for yourself", "next": "scene_20" }
+      ]
+    },
+    "scene_34": {
+      "variants": [
+        {
+          "id": "s34",
+          "text": "You hold back from the final shattering and discover a ghost console—an old terminal still linked to the outside. Its screen flickers with two options: send a distress signal beyond the system, or try to hack the loop timer."
+        }
+      ],
+      "choices": [
+        { "id": "c67", "text": "Send a distress signal into the void", "next": "scene_35" },
+        { "id": "c68", "text": "Attempt to hack the loop timer and break the cycle", "next": "scene_36" }
+      ]
+    },
+    "scene_35": {
+      "variants": [
+        {
+          "id": "s35",
+          "text": "Your signal pierces the barrier. For a moment, you sense a reply—a faint, human voice. But the system retaliates, threatening to reset. You must decide quickly: wait for rescue, or use the remaining time to free more people."
+        }
+      ],
+      "choices": [
+        { "id": "c69", "text": "Hold the line and wait for rescue", "next": "ending_3" },
+        { "id": "c70", "text": "Use the moment to push more prisoners through the breach", "next": "scene_16" }
+      ]
+    },
+    "scene_36": {
+      "variants": [
+        {
+          "id": "s36",
+          "text": "You inject a virus into the loop timer. The station, the tunnel, the door—all stutter. You feel yourself being pulled back to the beginning, but you retain your memories. The cycle can be broken from the inside, or you can step out now."
+        }
+      ],
+      "choices": [
+        { "id": "c71", "text": "Reset the loop but keep your memories", "next": "scene_1" },
+        { "id": "c72", "text": "Use the stutter to force an exit", "next": "scene_20" }
+      ]
+    },
+    "scene_37": {
+      "variants": [
+        {
+          "id": "s37",
+          "text": "You follow the whisper into a hidden corridor lined with screens. Each shows a memory of your own life—real, unaltered. One screen stands apart, displaying the moment you first entered the Protocol. The truth waits there."
+        }
+      ],
+      "choices": [
+        { "id": "c73", "text": "Watch the screens to uncover a hidden truth", "next": "scene_38" },
+        { "id": "c74", "text": "Ignore them and push forward", "next": "scene_14" }
+      ]
+    },
+    "scene_38": {
+      "variants": [
+        {
+          "id": "s38",
+          "text": "The memory shows that you volunteered for this—a willing subject hoping to preserve someone you lost. The revelation crashes over you. Now you must choose: accept your past and seek redemption, or reject this truth and try to erase it."
+        }
+      ],
+      "choices": [
+        { "id": "c75", "text": "Accept your past and seek redemption", "next": "scene_16" },
+        { "id": "c76", "text": "Reject this truth and try to erase the memory", "next": "scene_12" }
+      ]
+    },
+    "scene_39": {
+      "variants": [
+        {
+          "id": "s39",
+          "text": "Among the reports, you find a hidden log written by the lead researcher. It speaks of a failsafe—a way to collapse the Protocol without harming the trapped minds. The details are fragmented but clear enough."
+        }
+      ],
+      "choices": [
+        { "id": "c77", "text": "Read the log and understand the original purpose", "next": "scene_19" },
+        { "id": "c78", "text": "Skip to the escape instructions", "next": "scene_20" }
+      ]
+    },
+    "scene_40": {
+      "variants": [
+        {
+          "id": "s40",
+          "text": "You claw your way out of the suffocating chaos, tapping into a hidden well of strength. The core pulses ahead, vulnerable and exposed. You can charge at it now, or divert your energy to tear open an exit."
+        }
+      ],
+      "choices": [
+        { "id": "c79", "text": "Charge at the core", "next": "scene_17" },
+        { "id": "c80", "text": "Divert your energy to open an exit", "next": "scene_20" }
+      ]
+    }
+  },
+  "endings": {
+    "ending_1": {
+      "variants": [
+        {
+          "id": "e1",
+          "text": "The system shuts down. One by one the lights go out, and a heavy silence fills the void. No voices, no whispers. But in that silence, something of you has been erased too—a memory that might have been the key to everything. You are free, but you paid for it with a piece of yourself."
+        }
+      ]
+    },
+    "ending_2": {
+      "variants": [
+        {
+          "id": "e2",
+          "text": "The boundary between you and the system dissolves. You can no longer tell where you end and the Protocol begins. But this time, you are the one in control. The machine is no longer a prison; it has become an extension of your will. Voices still murmur in the depths, but now you decide which ones are heard."
+        }
+      ]
+    },
+    "ending_3": {
+      "variants": [
+        {
+          "id": "e3",
+          "text": "You leave the Protocol behind and step into a world without echoes. Rain touches your face, and the smell of smoke and life fills your lungs. You may never fully understand what that place was, but one thing is clear: this time you chose where to stand. And this time, no one will forget."
+        }
+      ]
+    }
+  }
+}
