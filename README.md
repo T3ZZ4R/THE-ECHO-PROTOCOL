@@ -55,5 +55,4 @@ This is an experimental narrative project.
 There is no single canonical truth or ending.
 
 👤 Author
-
-Ali Reza
+T3ZZ4R
